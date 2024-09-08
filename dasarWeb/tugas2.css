@@ -1,0 +1,47 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ddd;
+  line-height: 1.65;
+  padding-bottom: 1000px;
+}
+
+.container {
+  display: flex;
+  width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar1 h3 {
+  color: darkcyan;
+}
+
+.sidebar1 {
+  display: block;
+  width: 200px;
+  align-items: flex-start;
+  padding: 30px;
+  background-color: lightblue;
+}
+
+.main-content {
+  color: darkcyan;
+  align-items: center;
+  padding: 30px;
+}
+
+.sidebar2{
+  display: block;
+  width: 250px;
+  background-color: lightgrey;
+  align-items: flex-end;
+  padding: 30px;
+}
