@@ -1,9 +1,11 @@
+/*untuk mengatur styke text kelas tulisan_warna*/
 .tulisan_warna{
     color : blue;
     text-align: center;
     text-decoration: underline;
 }
 
+/*untuk mengatur styke text kelas par1*/
 .par1{
     text-decoration: underline;
     letter-spacing: 5px;
