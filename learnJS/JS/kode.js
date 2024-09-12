@@ -1,0 +1,1 @@
+alert("https://www.petanikode.com/");
