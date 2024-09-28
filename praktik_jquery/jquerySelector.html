@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jquery-3.7.1.js"></script>
+        <script>
+            // Program ini bikin semua judul dan paragraf hilang pas tombol "Klik Saya!" ditekan.
+            // Tunggu halaman siap dulu..
+            $(document).ready(function() {
+                // $("button") - Pilih elemen <button> untuk menangani event klik.
+                $("button").click(function() {
+                    // $("h2") - Pilih elemen <h2> untuk disembunyikan.
+                    $("h2").hide();
+                    // $(".subjudul") - Pilih semua elemen dengan class 'subjudul' untuk disembunyikan.
+                    $(".subjudul").hide();
+                    // $("#paragraf") - Pilih paragraf pertama dengan id 'paragraf' untuk disembunyikan.
+                    $("#paragraf").hide();
+                    // $("#paragraf.dua") - Pilih paragraf kedua dengan id 'paragraf' dan class 'dua' untuk disembunyikan.
+                    $("#paragraf.dua").hide();
+                    // $("div p.paragraf") - Pilih semua elemen <p> dengan class 'paragraf' yang ada di dalam <div> untuk disembunyikan.
+                    $("div p.paragraf").hide();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h2>Ini adalah judul bab</h2>
+        <h3 class="subjudul">Ini adalah sub judul bab</h3>
+        <p id="paragraf">Ini adalah paragraf pertama</p>
+        <p id="paragraf" class="dua">Ini adalah paragraf kedua</p>
+        <div>
+            <p class="paragraf">
+                ini adalah paragraf ketiga
+            </p>
+        </div>
+        <p>Ini paragraf yang akan tetap ditampilkan </p>
+        <button> Klik Saya!</button>
+    </body>
+</html>
