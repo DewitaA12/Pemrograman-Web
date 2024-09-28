@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styleSlideToggle.css"/>
+        <script src="jquery-3.7.1.js"></script>
+        <script>
+            //load dokumen HTML
+            $(document).ready(function() {
+                //Ketikaka elemen dengan id flip di klik
+                $("#flip").click(function() {
+                    // Sembunyikan elemen dengan id "kotak2" secara perlahan dengan efek slide ke atas dan jika diklik lagi akan muncul slide ke bawah
+                    $ ("#kotak2").slideToggle("slow");
+                    $ ("#kotak3").slideToggle("slow");
+                    $ ("#kotak4").slideToggle("slow");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="flip">Klik untuk efek slide</div>
+        <div id="kotak2">Selamat Pagi</div>
+        <div id="kotak3">Selamat Sore</div>
+        <div id="kotak4">Selamat Malam</div>
+    </body>
+</html>
