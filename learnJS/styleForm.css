@@ -8,7 +8,7 @@ body {
 .form-header {
     width: 442px;
     height: 60px;
-    background-color: #143F6C; /* Header background color */
+    background-color: #5227CC; /* Header background color */
     margin: auto;
     
 }
@@ -18,7 +18,7 @@ form {
     margin: 0 auto;
     background: white;
     padding: 20px;
-    border: 1px solid #143F6C;
+    border: 1px solid #5227CC;
 }
 .form-group {
     margin-bottom: 15px;
@@ -38,18 +38,20 @@ textarea {
     border-radius: 4px;
     box-sizing: border-box;
 }
-input[type="radio"] {
+input[type="radio" ] {
     margin-right: 5px;
+   
 }
 .checkbox-group {
     display: flex;
     align-items: center;
+   
 }
 input[type="checkbox"] {
     margin-right: 5px;
 }
 input[type="submit"] {
-    background-color: #143F6C;
+    background-color: #5227CC;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -58,5 +60,7 @@ input[type="submit"] {
     transition: background-color 0.3s;
 }
 input[type="submit"]:hover {
-    background-color: #000000;
+    background-color: #ffffff;
+    color: #5227CC;
+    border: 1px solid #5227CC;
 }
