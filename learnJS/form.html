@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="styleForm.css">
+    <script>
+        function validateForm() {
+            let nama = document.getElementById("nama").value;
+            let alamat = document.getElementById("alamat").value;
+            let jenisKelamin = document.querySelector('input[name="jenisKelamin"]:checked');
+            let hobby = document.querySelector('input[name="hobby"]:checked');
+            let pekerjaan = document.querySelector('input[name="pekerjaan"]:checked');
+
+            // Validation
+            if (nama === "") {
+                alert("Nama tidak boleh kosong!");
+                return false;
+            }
+            if (alamat === "") {
+                alert("Alamat tidak boleh kosong!");
+                return false;
+            }
+            if (jenisKelamin === null) {
+                alert("Harap pilih jenis kelamin!");
+                return false;
+            }
+            if (hobby === null) {
+                alert("Harap pilih hobby!");
+                return false;
+            }
+            if (pekerjaan === null) {
+                alert("Harap pilih pekerjaan!");
+                return false;
+            }
+
+            alert("Data berhasil disubmit!");
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <div class="form-header"></div>
+    </div>
+    <form onsubmit="return validateForm()">
+        <div class="form-group">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama">
+        </div>
+
+        <div class="form-group">
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Jenis Kelamin:</label>
+            <label><input type="radio" id="laki-laki" name="jenisKelamin" value="laki-laki"> Laki-laki</label>
+            <label><input type="radio" id="perempuan" name="jenisKelamin" value="perempuan"> Perempuan</label>
+        </div>
+
+        <div class="form-group">
+            <label>Hobby:</label>
+            <label><input type="radio" id="berenang" name="hobby" value="berenang"> Berenang</label>
+            <label><input type="radio" id="berlari" name="hobby" value="berlari"> Berlari</label>
+            <label><input type="radio" id="lain-lain" name="hobby" value="lain-lain"> Lain-lain</label>
+        </div>
+
+        <div class="form-group">
+            <label>Pekerjaan:</label>
+            <label><input type="radio" id="swasta" name="pekerjaan" value="swasta"> Swasta</label>
+            <label><input type="radio" id="pns" name="pekerjaan" value="pns"> PNS</label>
+            <label><input type="radio" id="lain-lain-pekerjaan" name="pekerjaan" value="lain-lain"> Lain-lain</label>
+        </div>
+
+        <div class="form-group checkbox-group">
+            <input type="checkbox" id="kirim-data" name="kirim-data">
+            <label for="kirim-data">Check jika anda akan mengirimkan data ini</label>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
