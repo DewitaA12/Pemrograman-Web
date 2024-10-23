@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1;
+}
+
+header {
+    background: #ffffff;
+    color: #748db9;
+    padding: 1em;
+    text-align: center;
+}
+
+.logo {
+    max-width: 600px; /* Ukuran maks logo */
+    height: auto; /* Menjaga rasio aspek gambar */
+}
+
+p, h2 {
+    color: #0e3373;
+}
+
+.nav-container {
+    text-align: center;
+    height: 25px;
+}
+
+nav a {
+    color: #0e3373;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+.opening {
+    text-align: center;
+    color: #0e3373;
+}
+
+.tagline {
+    text-align: center;
+    color: #0e3373;
+}
+
+div.scroll-container {
+    background-color: #0e3373;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+div.scroll-container img {
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+    height: 200vh;
+}
+
+.closingstate {
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background: #0e3373;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #748db9;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    color: #ffffff;
+}
+
+/*Style Halaman Price List */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: left;
+    background-color: #ffffff !important;
+}
+
+.merged {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Form */
+.formbook {
+    font-family: Arial;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.form-header {
+    width: 442px;
+    height: 60px;
+    margin: auto;
+    text-align: center;
+    line-height: 60px; /* Menengahkan teks secara vertikal */
+    color: white;
+    font-size: 24px;
+}
+
+form {
+    width: 400px;
+    margin: 20px auto; /* Menengahkan form */
+    background: white;
+    padding: 20px;
+    border: 1px solid #0e3373;
+    border-radius: 8px; /* Sudut bulat */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayang bayang */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+select {
+    font-family: Arial;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #0e3373;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Tombol full*/
+}
+
+input[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #0e3373;
+    border: 1px solid #0e3373;
+}
+
+.warning {
+    color: rgb(164, 30, 30) !important;
+}
